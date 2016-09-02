@@ -31,19 +31,25 @@ function Filters.XLGetTaskLocalUrl(time, logInfo)
 	end
 end
 
+local unescape = function(url)
+  return url:gsub("%%(%x%x)", function(x)
+	return string.char(tonumber(x, 16))
+	end)
+end
+
 function Filters.SessionReceive(time, logInfo)
 	local str = logInfo[1]
-	--[[Session::HandleRecvSuccess SessionId=[0] State=[wait] head=[GET]]
+	--[[Session::HandleRecvSuccess SessionId=[0] State=[wait] head=[GET ]]
 	local log = string.match(str, "Session::HandleRecvSuccess SessionId=%[(%d+)%] State=%[(%w+)%] head=%[(%w+)")
 	if (log ~= nil) then
-		print(str)
+		print(unescape(str))
 		return true
 	else
 		return false;
 	end
 end
 
-function Filters.SessionReceive(time, logInfo)
+function Filters.SessionResponse(time, logInfo)
 	local str = logInfo[1]
 	--[[Session::HandleRecvHead DoSend Respone SessionId=[0] Http=[HTTP/1.1 200 OK]]
 	local log = string.match(str, "Session::HandleRecvHead DoSend Respone SessionId=%[(%d+)%] Http=%[HTTP/1.1 (%d+) OK")
@@ -54,12 +60,6 @@ function Filters.SessionReceive(time, logInfo)
 		return false;
 	end
 end
-
-
-
-
-
-
 
 --¿ò¼Ü²¿·Ö
 function getTime(str)
