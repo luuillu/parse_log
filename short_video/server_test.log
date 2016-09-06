@@ -1,0 +1,155 @@
+2016-09-02 18:59:49:860 [1][DEBUG][permissionctrl][SetPermissionLevel:39] set permission level: 2
+2016-09-02 18:59:49:861 [1][DEBUG][permissionctrl][SetPermissionLevel:44] set ok
+2016-09-02 18:59:49:915[SLOG INIT]current config of SLOG:log_level=1,log_file=/sdcard/server.log,max_log_size=80(M),max_log_count=50,flush_size=2097152,flush_interval=5,config_update_interval=30.
+2016-09-02 18:59:49:915 [1][INFO][thread_manager][xl_thread_manager_init:103] xl_thread_manager_init begin.... version=2.0901.239.889
+2016-09-02 18:59:49:924 [2][DEBUG][net_reactor][xl_net_reactor_init:814] new gp_ssl_ctx:[0x9e3ef000]
+2016-09-02 18:59:49:925 [2][DEBUG][net_reactor][xl_net_reactor_init:820] new gp_ssl_ctx_verify_peer:[0x9e3ef380]
+2016-09-02 18:59:49:925 [2][INFO][dns_new_parser][Init:214] now idle worker count = 2
+2016-09-02 18:59:49:925 [2][DEBUG][task_stat][Init:46] TaskStatModule::Init
+2016-09-02 18:59:49:925 [2][DEBUG][globalinfo][GetPeerid:155] expect global info(peerid) : F8CFC5D72516004V
+2016-09-02 18:59:49:926 [2][DEBUG][globalinfo][GetGuid:185] expect global info(guid) : 355470062241662_F8CFC5D72516
+2016-09-02 18:59:49:926 [2][DEBUG][globalinfo][GetAppKey:161] expect global info(appKey) : Y29tLnh1bmxlaS5hbmRyb2lkLmRvd25sb2FkAHYXAQ==
+2016-09-02 18:59:49:926 [2][DEBUG][globalinfo][GetAppName:167] expect global info(appName) : com.xunlei.android.download
+2016-09-02 18:59:49:926 [2][DEBUG][globalinfo][GetAppVersion:179] expect global info(appVersion) : 1.0
+2016-09-02 18:59:49:926 [2][DEBUG][globalinfo][GetStatSavePath:191] expect global info(statSavePath) : /data/user/0/com.xunlei.android.download/files/
+2016-09-02 18:59:49:926 [2][DEBUG][globalinfo][GetStatCfgSavePath:197] expect global info(statCfgPath) : /data/user/0/com.xunlei.android.download/files/
+2016-09-02 18:59:49:926 [2][DEBUG][globalinfo][GetNetWorkType:216] expect global info(netType) : 9
+2016-09-02 18:59:49:927 [2][DEBUG][task_stat][ChangeStatNetWorkType:286] current net type:9
+2016-09-02 18:59:49:927 [3][DEBUG][file_system][xl_file_system_poll:938] fs work thread start...
+2016-09-02 18:59:49:927 [3][DEBUG][file_system][xl_file_system_poll:943] xl_file_system_poll wait call..
+2016-09-02 18:59:49:935 [4][DEBUG][dns_new_parser][sDnsParserThread:655] dns_parser_thread before wait...
+2016-09-02 18:59:49:985 [2][DEBUG][task_stat][Init:86] TaskStatModule::Init result=1
+2016-09-02 18:59:49:985 [2][DEBUG][reporter][Init:35] P2pStatInfo::Init
+2016-09-02 18:59:49:985 [2][DEBUG][task_stat][AddStatInfo:390] report_id:1812630059, key:OSVersion, value:
+2016-09-02 18:59:49:986 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:isNeedQuery, value:0, bacc=0
+2016-09-02 18:59:49:986 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:QueryCtrlServerTimes, value:0, bacc=1
+2016-09-02 18:59:49:986 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:QueryCtrlServerSuccessTimes, value:0, bacc=1
+2016-09-02 18:59:49:986 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:QueryCtrlServerTimeCosts, value:0, bacc=0
+2016-09-02 18:59:49:986 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:QueryCtrlServerResult, value:0, bacc=0
+2016-09-02 18:59:49:986 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:QueryCtrlServerFailedCode, value:0, bacc=0
+2016-09-02 18:59:49:986 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:isNeedQuery, value:0, bacc=0
+2016-09-02 18:59:49:987 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:QueryCtrlServerTimeCosts, value:0, bacc=0
+2016-09-02 18:59:49:987 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:QueryCtrlServerResult, value:0, bacc=0
+2016-09-02 18:59:49:987 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:QueryCtrlServerFailedCode, value:0, bacc=0
+2016-09-02 18:59:49:987 [2][DEBUG][globalinfo][GetStatSavePath:191] expect global info(statSavePath) : /data/user/0/com.xunlei.android.download/files/
+2016-09-02 18:59:49:987 [2][DEBUG][setting][LoadSettingFromFile:189] setting path: /data/user/0/com.xunlei.android.download/files/setting.cfg
+2016-09-02 18:59:49:988 [2][DEBUG][interface][sd_open_ex:107] sd_open_ex open success, filepath=[/data/user/0/com.xunlei.android.download/files/setting.cfg] fd=[43] flag=[0x42]
+2016-09-02 18:59:49:996 [2][DEBUG][interface][sd_close_ex:142] sd_close_ex success to close file, fd=[43]
+2016-09-02 18:59:49:996 [2][DEBUG][common][sd_base64_decode:102] eui_sd_base64_decode
+2016-09-02 18:59:49:996 [2][INFO][setting][LoadSettingFromFile:240] LoadSettingFromFile file_content={
+   "content" : {
+      "special_domain" : {
+         "domain" : "",
+         "size_shrink" : "123456mp4.com;auau99.com;2tu.cc;ed8.info;btbt.tv;tuifeiapi.com;a67.com;twsjwz.com;hd180.com;o0o0.in;zei8.net;26ts.com;bbbplayer.com;oicp.net"
+      },
+      "strategy" : {
+         "name" : ""
+      }
+   },
+   "control" : {
+      "last_update_tick" : 1472813869
+   }
+}
+
+2016-09-02 18:59:49:996 [2][DEBUG][setting][GetString:32] [grayinfo][name]: [default]
+2016-09-02 18:59:49:997 [2][DEBUG][setting][LoadSettingFromFile:258] path: /data/user/0/com.xunlei.android.download/files/setting.cfg LoadSettingFromFile success! Gray info=
+2016-09-02 18:59:49:997 [2][DEBUG][setting][GetInt32:50] [wifi][wifi_max_download_speed_stat_count]: [default]10000
+2016-09-02 18:59:49:997 [2][DEBUG][globalinfo][GetStatSavePath:191] expect global info(statSavePath) : /data/user/0/com.xunlei.android.download/files/
+2016-09-02 18:59:49:997 [2][DEBUG][interface][sd_open_ex:107] sd_open_ex open success, filepath=[/data/user/0/com.xunlei.android.download/files/download_stat.bin] fd=[43] flag=[0x0]
+2016-09-02 18:59:49:998 [2][DEBUG][interface][sd_close_ex:142] sd_close_ex success to close file, fd=[43]
+2016-09-02 18:59:49:998 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 18:59:49:998 [2][DEBUG][dphub_manager][DPhubManager:23] DPhubManager constructed.
+2016-09-02 18:59:49:998 [2][DEBUG][setting][GetBool:68] [query][switch_dphub]: [default]1
+2016-09-02 18:59:49:998 [2][DEBUG][dphub_manager][DPhubManager:26] canDoDPhubQuery = 1
+2016-09-02 18:59:49:999 [2][DEBUG][globalinfo][GetAppName:167] expect global info(appName) : com.xunlei.android.download
+2016-09-02 18:59:49:999 [2][DEBUG][globalinfo][GetPeerid:155] expect global info(peerid) : F8CFC5D72516004V
+2016-09-02 18:59:49:999 [2][DEBUG][globalinfo][GetProductFlag:173] expect global info(ProductFlag) : 80000001
+2016-09-02 18:59:49:999 [2][INFO][ptl_nat_check][PtlNewNatCheck_init:88] PtlNewNatCheck_init
+2016-09-02 18:59:49:999 [2][DEBUG][globalinfo][GetMiuiVersion:112] expect global info(miuiVersion) : 
+2016-09-02 18:59:49:999 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:2 start.
+2016-09-02 18:59:49:999 [2][DEBUG][upnpset][StartTimer:442] set time out interval: 10000, timer_id:2 
+2016-09-02 18:59:50:000 [2][DEBUG][permissionctrl][ActiveNetworkOnInit:66] permission level: 2
+2016-09-02 18:59:50:000 [2][DEBUG][permissionctrl][ActiveNetworkOnInit:70] ActiveNetworkOnInit
+2016-09-02 18:59:50:000 [2][DEBUG][setting][IsNeedQueryNewSetting:134] last update tick: 1472813869
+2016-09-02 18:59:50:000 [2][DEBUG][setting][TryQueryNewSetting:385] isNeedQuery=0
+2016-09-02 18:59:50:000 [2][DEBUG][task_stat][AddStatInfo:411] report_id:1812630059, key:isNeedQuery, value:0, bacc=0
+2016-09-02 18:59:50:000 [2][DEBUG][dcdn_accounts_manager][Init:27] DcdnAccountsManager::Init
+2016-09-02 18:59:50:000 [2][DEBUG][dcdn_accounts_storage][Load:33] DcdnAccountsStorage::Load
+2016-09-02 18:59:50:001 [2][DEBUG][dcdn_accounts_storage][Load:36] setting path: /sdcard/dcdncost.info
+2016-09-02 18:59:50:001 [2][DEBUG][dcdn_accounts_storage][Load:39] DcdnAccountsStorage file not exist
+2016-09-02 18:59:50:001 [2][DEBUG][dcdn_accounts_manager][StartReportTimer:150] DcdnAccountsManager::StartReportTimer, time:60000 ms
+2016-09-02 18:59:50:001 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:3 start.
+2016-09-02 18:59:50:001 [2][DEBUG][task_stat][SetReportSwitch:331] SetReportSwitch:1
+2016-09-02 18:59:50:002 [1][DEBUG][ihubprotocol][BuildReserve6x:224] reserve6xLength=0 force=1
+2016-09-02 18:59:50:002 [1][DEBUG][globalinfo][GetAppKey:161] expect global info(appKey) : Y29tLnh1bmxlaS5hbmRyb2lkLmRvd25sb2FkAHYXAQ==
+2016-09-02 18:59:50:002 [1][DEBUG][globalinfo][GetProductFlag:173] expect global info(ProductFlag) : 80000001
+2016-09-02 18:59:50:002 [1][DEBUG][ihubprotocol][BuildReserve6x:250] productversion:2.0901.239.889, productId:2147483649, thunderVersion:2.0901.239.889, partnerId:6006, downChannel:miui
+2016-09-02 18:59:50:002 [1][DEBUG][download_lib][DoInit:100] curr setting path: /data/user/0/com.xunlei.android.download/files/
+2016-09-02 18:59:50:002 [1][INFO][task_manager_interface][XLInit:62] XLInit app_key=Y29tLnh1bmxlaS5hbmRyb2lkLmRvd25sb2FkAHYXAQ==, app_name=com.xunlei.android.download, app_version=1.0, peer_id=F8CFC5D72516004V, guid=355470062241662_F8CFC5D72516, stat_save_path=/data/user/0/com.xunlei.android.download/files, cfg_path=/data/user/0/com.xunlei.android.download/files,  net=9
+2016-09-02 18:59:50:002 [1][INFO][task_manager_interface][XLInit:67] XLInit ret=9000
+2016-09-02 18:59:50:008 [1][INFO][task_manager_interface][XLSetLocalProperty:643]  XLSetLocalProperty key: PhoneModel, keyLen: 10, value: Nexus 6, valueLen: 7
+2016-09-02 18:59:50:008 [1][DEBUG][task_manager_interface][Init:564] SetLocalPropertyCommand  key = PhoneModel keySize = 10, value = Nexus 6, valueSize = 7
+2016-09-02 18:59:50:011 [2][DEBUG][download_main_thread][download_main_thread_notice_fd_ev_callback:76] download_main_thread_notice_fd_ev_callback signaled 
+2016-09-02 18:59:50:011 [2][DEBUG][download_main_thread][download_main_thread:285] download_main_thread recv one msg
+2016-09-02 18:59:50:012 [2][DEBUG][download_main_thread][handle_sdk_msg:162] handle_sdk_msg enter..
+2016-09-02 18:59:50:012 [2][DEBUG][task_manager_interface][Execute:584] key: PhoneModel, value: Nexus 6
+2016-09-02 18:59:50:012 [2][DEBUG][task_stat][ReportLocalProperty:273] The key is not Guid
+2016-09-02 18:59:50:016 [1][INFO][task_manager_interface][XLSetMiUiVersion:555]  XLSetMiUiVersion  version: 437935db5c, len: 10
+2016-09-02 18:59:50:016 [1][DEBUG][task_manager_interface][Init:409] SetMiUiVersionCommand  version = 437935db5c useridsize = 10
+2016-09-02 18:59:50:017 [2][DEBUG][download_main_thread][download_main_thread_notice_fd_ev_callback:76] download_main_thread_notice_fd_ev_callback signaled 
+2016-09-02 18:59:50:018 [2][DEBUG][download_main_thread][download_main_thread:285] download_main_thread recv one msg
+2016-09-02 18:59:50:018 [2][DEBUG][download_main_thread][handle_sdk_msg:162] handle_sdk_msg enter..
+2016-09-02 18:59:50:018 [2][DEBUG][task_manager_interface][Execute:421] version: 437935db5c, len: 10
+2016-09-02 18:59:50:021 [5][INFO][task_manager_interface][XLNotifyNetWorkType:83] XLNotifyNetWorkType 9
+2016-09-02 18:59:50:022 [2][DEBUG][download_main_thread][download_main_thread_notice_fd_ev_callback:76] download_main_thread_notice_fd_ev_callback signaled 
+2016-09-02 18:59:50:022 [2][DEBUG][download_main_thread][download_main_thread:285] download_main_thread recv one msg
+2016-09-02 18:59:50:022 [2][DEBUG][download_main_thread][handle_sdk_msg:162] handle_sdk_msg enter..
+2016-09-02 18:59:50:022 [2][DEBUG][task_manager_interface][Execute:221] NotifyNetWorkChangedCommand, net: 9
+2016-09-02 18:59:50:023 [2][DEBUG][globalinfo][GetNetWorkType:216] expect global info(netType) : 9
+2016-09-02 18:59:50:023 [2][DEBUG][permissionctrl][GetPermission:52] function name is PermissionCtrlUpnp(permission level: 1), current level is 2
+2016-09-02 18:59:50:023 [2][DEBUG][permissionctrl][GetPermission:56] Permission Allow
+2016-09-02 18:59:50:023 [2][DEBUG][globalinfo][SetNetWorkType:208] change to wifi~~~
+2016-09-02 18:59:50:023 [2][DEBUG][upnpset][ChangeWifi:201] Upnpc::ChangeWifi  sInfo.state:0,m_bAllowSetUpnp:0 
+2016-09-02 18:59:50:023 [2][DEBUG][task_stat][SetCurrentNetWorkType:320]  NetWorkType=9
+2016-09-02 18:59:50:023 [2][DEBUG][task_stat][ChangeStatNetWorkType:286] current net type:9
+2016-09-02 18:59:50:043 [2][DEBUG][download_main_thread][download_main_thread_notice_fd_ev_callback:76] download_main_thread_notice_fd_ev_callback signaled 
+2016-09-02 18:59:50:043 [2][DEBUG][download_main_thread][download_main_thread:285] download_main_thread recv one msg
+2016-09-02 18:59:50:044 [2][DEBUG][download_main_thread][handle_sdk_msg:162] handle_sdk_msg enter..
+2016-09-02 18:59:50:044 [2][DEBUG][task_manager_interface][Execute:253] bssid: 64:d9:54:68:8c:1b
+2016-09-02 18:59:50:050 [5][INFO][task_manager_interface][XLNotifyNetWorkCarrier:91] XLNotifyNetWorkCarrier 0
+2016-09-02 18:59:50:050 [2][DEBUG][download_main_thread][download_main_thread_notice_fd_ev_callback:76] download_main_thread_notice_fd_ev_callback signaled 
+2016-09-02 18:59:50:050 [2][DEBUG][download_main_thread][download_main_thread:285] download_main_thread recv one msg
+2016-09-02 18:59:50:050 [2][DEBUG][download_main_thread][handle_sdk_msg:162] handle_sdk_msg enter..
+2016-09-02 18:59:50:050 [2][DEBUG][task_manager_interface][Execute:241] NotifyNetWorkCarrierChangedCommand, carrier: 0
+2016-09-02 18:59:50:138 [1][INFO][task_manager_interface][XLSetUserId:474]  XLSetUserId  userid: , len: 0
+2016-09-02 18:59:50:143 [2][DEBUG][download_main_thread][download_main_thread_notice_fd_ev_callback:76] download_main_thread_notice_fd_ev_callback signaled 
+2016-09-02 18:59:50:143 [2][DEBUG][download_main_thread][download_main_thread:285] download_main_thread recv one msg
+2016-09-02 18:59:50:143 [2][DEBUG][download_main_thread][handle_sdk_msg:162] handle_sdk_msg enter..
+2016-09-02 18:59:50:144 [2][DEBUG][speed_limitor][SetSpeedLimit:73] DownloadLib::SetSpeedLimit success, maxDownloadSpeed=[-1], maxUploadSpeed=[-1]
+2016-09-02 18:59:50:145 [1][DEBUG][download_lib][SetSpeedLimit:822] DownloadLib::SetSpeedLimit maxDownloadSpeed=[-1], maxUploadSpeed=[-1]
+2016-09-02 18:59:50:928 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 18:59:51:922 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 18:59:52:937 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 18:59:53:958 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 18:59:54:958 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 18:59:55:951 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 18:59:56:956 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 18:59:57:955 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 18:59:58:959 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 18:59:59:923 [2][DEBUG][upnpset][HandleTimeOutInternal:464] Upnpc::HandleTimeOutInternal time out , m_timerId:2
+2016-09-02 18:59:59:923 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:4 start.
+2016-09-02 18:59:59:923 [2][DEBUG][upnpset][StartTimer:442] set time out interval: 10000, timer_id:4 
+2016-09-02 18:59:59:954 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 19:00:00:956 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 19:00:01:950 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 19:00:02:950 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 19:00:03:959 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 19:00:04:960 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 19:00:05:967 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 19:00:06:960 [2][DEBUG][xl_timer][start_timer:431] timer:0xb3a53000, timer_id:1 start.
+2016-09-02 19:00:07:137 [2][DEBUG][download_main_thread][download_main_thread_notice_fd_ev_callback:76] download_main_thread_notice_fd_ev_callback signaled 
+2016-09-02 19:00:07:137 [2][DEBUG][download_main_thread][download_main_thread:285] download_main_thread recv one msg
+2016-09-02 19:00:07:137 [2][DEBUG][download_main_thread][handle_sdk_msg:162] handle_sdk_msg enter..
+2016-09-02 19:00:07:137 [2][DEBUG][setting][GetInt32:50] [task_num][task_max_num]: [default]20
+2016-09-02 19:00:07:137 [2][INFO][p2sp_task][InitManager:2690] reportid: [1812630060] InitManager m_task_id=1000, status:0
+2016-09-02 19:00:07:137 [2][DEBUG][task_index_info][SetTaskCreateMode:59] task is continue mode

@@ -1,6 +1,8 @@
 --[[local downloadlog = "./sdcard1/server.log.8"]]
 local downloadlog = "./server.log"
 local f = assert(io.open(downloadlog,'r'))
+--[[dofile ("./common.lua")]]
+
 io.input(f)
 Filters = {}
 
@@ -42,7 +44,7 @@ function Filters.SessionReceive(time, logInfo)
 	--[[Session::HandleRecvSuccess SessionId=[0] State=[wait] head=[GET ]]
 	local log = string.match(str, "Session::HandleRecvSuccess SessionId=%[(%d+)%] State=%[(%w+)%] head=%[(%w+)")
 	if (log ~= nil) then
-		print(unescape(str))
+		print(unescape(unescape(str)))
 		return true
 	else
 		return false;
@@ -64,7 +66,8 @@ end
 --¿ò¼Ü²¿·Ö
 function getTime(str)
 --[[2016-07-27 22:03:08:352]]
-	local Y, Mo, D, H, M, S, mS = string.match(str, "(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+):(%d+)")
+	--[[local Y, Mo, D, H, M, S, mS = string.match(str, "^(%d+)-(%d+)-(%d+)%s+(%d+):(%d+):(%d+):(%d+)%s+%[(%d+)%]%[([%w_]+)%]")]]
+  local Y, Mo, D, H, M, S, mS,tid, level, strModule, strFunction = string.match(str,"^(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+):(%d+)%s+%[(%d+)%]%[(%w+)%]%[([%w_]+)%]%[([%w_]+:%d+)%]")
 	if mS == nil then
 		return nil
 	end
@@ -114,6 +117,10 @@ function Parse()
 end
 
 Parse()
+
+for k,v in pairs({"a"}) do
+  print(k, v)
+  end
 
 
 
