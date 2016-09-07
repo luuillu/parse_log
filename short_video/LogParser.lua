@@ -1,56 +1,7 @@
 LogParser = {}
 
-
---¿ò¼Ü²¿·Ö
-function getTime(str)
---[[2016-07-27 22:03:08:352]]
-	local Y, Mo, D, H, M, S, mS = string.match(str, "^(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+):(%d+)")
-	if mS == nil then
-		return nil
-	end
-	mS = tonumber(mS)
-	S = tonumber(S)
-	if (mS > 500) then
-		S = S+1
-	end
-	--[[print(Y, Mo, D, H, M, S, mS)]]
-	return os.time({year=Y, month=Mo, day=D, hour=H,min=M,sec=S})
-end
-
-function doFilter (time, logInfo)
-	for k,filter in pairs(Filters) do
-		if (filter(time, logInfo)) then
-			break;
-		end
-	end
-end
-
-function Parse()
-	local logInfo = {}
-	while (true)
-	do
-		local line = io.read()
-		if (line == nil) then
-			break
-		end
-
-		local time = getTime(line)
-		if (time ~= nil) then
-			--[[print(os.date("%x %X", getTime(line)))]]
-			if (#logInfo >0) then
-				doFilter(time, logInfo)
-			end
-			logInfo = {line}
-		else
-			if (#logInfo > 0) then
-				table.insert(logInfo, line);
-			end
-		end
-	end
-
-	if (#logInfo >0) then
-		doFilter(time, logInfo)
-	end
+if (unpack == nil) then
+	unpack = table.unpack
 end
 
 --[[
@@ -64,7 +15,7 @@ CommonInfo = {
   mFunction,
 }]]
 
-local function isExistInArray(array, value) 
+local function isExistInArray(array, value)
   if (array == nil) then
     return false
   end
@@ -76,20 +27,20 @@ local function isExistInArray(array, value)
   return false
 end
 
-local function doMatch(commonInfo, param, ...) 
+local function doMatch(commonInfo, param, ...)
   arg = {...}
   if (#arg == 0) then
     return nil
   end
-  
+
   if (param == nil) then
-    return commonInfo 
+    return commonInfo
   end
 
   if ("function" == type(param)) then
-    return param(commonInfo, table.unpack(arg))
+    return param(commonInfo, unpack(arg))
   end
-  
+
   local find = true
   for i, v in ipairs(arg) do
     assert (param[i] == nil or "table" == type(param[i]), "the param ".. tostring(param[i]) .. " must be table")
@@ -100,7 +51,7 @@ local function doMatch(commonInfo, param, ...)
       end
     end
   end
-  
+
   if (find) then
     for i, v in ipairs(arg) do
       if (param[i] ~= nil and param[i].AS ~= nil) then
@@ -109,7 +60,7 @@ local function doMatch(commonInfo, param, ...)
     end
     return commonInfo
   else
-    return nil 
+    return nil
   end
 end
 
@@ -155,28 +106,25 @@ local function doFilter(filters, logInfo)
 end
 
 local function parseCommonInfo (strLine)
-  local Y, Mo, D, H, M, S, mS,tid, level, strModule, strFunction = string.match(strLine,"^(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+):(%d+)%s+%[(%d+)%]%[(%w+)%]%[([%w_]+)%]%[([%w_]+:%d+)%]")
+	local Y, Mo, D, H, M, S, mS,tid, level, strModule, strFunction = string.match(strLine,"^(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+):(%d+)%s+%[(%d+)%]%[(%w+)%]%[([%w_]+)%]%[([%w_]+:%d+)%]")
 	if Y == nil then
-    --[[print ("parseCommonInfo strLine=" .. strLine)]]
+	--[[print ("parseCommonInfo strLine=" .. strLine)]]
 		return nil
 	end
 	mS = tonumber(mS)
 	S = tonumber(S)
-	if (mS > 500) then
-		S = S+1
-	end
-  
-  commonInfo = {}
-	commonInfo.mTimeStamp = os.time({year=Y, month=Mo, day=D, hour=H,min=M,sec=S})
-  commonInfo.mThreadId = tid
-  commonInfo.mDebugLevel = level
-  commonInfo.mModule = strModule
-  commonInfo.mFunction = strFunction
-  return commonInfo;
+
+	commonInfo = {}
+	commonInfo.mTimeStamp = {S = os.time({year=Y, month=Mo, day=D, hour=H,min=M,sec=S}), MS = mS}
+	commonInfo.mThreadId = tid
+	commonInfo.mDebugLevel = level
+	commonInfo.mModule = strModule
+	commonInfo.mFunction = strFunction
+	return commonInfo;
 end
 
 function LogParser:initParser()
-	local rawLog = {}
+  local rawLog = {}
   local logInfos = {}
   local lineNo = 0
   local oldCommonInfo = nil
@@ -235,7 +183,7 @@ function LogParser:groupBy(...)
   if (arg.n == 0) then
     return self
   end
-  
+
   local logInfos = {}
   for i, info in ipairs (self.mLogInfos) do
     boolean isValid = true
@@ -248,8 +196,8 @@ function LogParser:groupBy(...)
       table.insert(logInfos, info)
     end
   end
-  
-  table.sort(logInfos, function (logInfoA, logInfoB) 
+
+  table.sort(logInfos, function (logInfoA, logInfoB)
     for k, v in pairs(arg) do
       if (logInfoA[v]< logInfoB[v]) then
         return true
