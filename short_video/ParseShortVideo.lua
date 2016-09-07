@@ -1,7 +1,8 @@
 dofile ("./LogParser.lua")
-local downloadlog = "C:\\Users\\lxw\\AppData\\Local\\Temp\\server.log"
+dofile ("./local.lua")
 
-parser = LogParser.LogParser(downloadlog)
+-- g_LogFilePath defined in local.lua that file can not commit
+parser = LogParser.LogParser(g_LogFilePath)
 
 function ShortVideo ()
   local filters = {
